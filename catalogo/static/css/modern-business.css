@@ -1,0 +1,24 @@
+
+/*                   Body                                */
+
+body {
+  padding-top: 56px;
+}
+
+
+/*                Css del carrusel                        */
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*         Espacio entre los item del portafolio          */
+
+.portfolio-item {
+  margin-bottom: 30px;
+}

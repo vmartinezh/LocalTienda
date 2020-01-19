@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Nice&Cheap</title>
+
+  <!-- Bootstrap core CSS -->
+  {% load static %}<link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  {% load static %}<link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="{%url 'index' %}">Nice&Cheap</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{%url 'about'  %}">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{%url 'contact' %}">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{%url 'sidebar' %}">Tienda</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Tienda</h1>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="{%url 'index' %}">Inicio</a>
+      </li>
+      <li class="breadcrumb-item active">Tienda</li>
+    </ol>
+
+    <!-- Content Row -->
+    <div class="row">
+      <!-- Sidebar Column -->
+      <div class="col-lg-3 mb-4">
+        <div class="list-group">
+          <a href="{%url 'index' %}" class="list-group-item">Inicio</a>
+          <a href="{%url 'about' %}" class="list-group-item">Nosotros</a>
+          <a href="{%url 'contact' %}" class="list-group-item">Contacto</a>
+          <a href="{%url 'sidebar' %}" class="list-group-item active">Tienda</a>
+        </div>
+      </div>
+      <!-- Content Column -->
+    <div class="col-lg-9 mb-4">
+    <!-- Portfolio Section -->
+      <h2>Portfolio Heading</h2>
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="{% static 'img/ame1.jpg' %}" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Project One</a>
+                </h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="{% static 'img/ame2.jpg' %}" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Project Two</a>
+                </h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="{% static 'img/ame3.jpg' %}" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">$3.990</a>
+                </h4>
+                <p class="card-text">Polera Peanut Chill Reciclada</p>
+                <br>
+                <p class="card-text">
+                  Item: Polera básica con estampado delantero. <br>
+                  Color: Rojo. <br>
+                  Talla: M. <br>
+                  Material: Algodón. <br>
+                  Condición: Vintage óptima.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="{% static 'img/ame4.jpg' %}" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Project Four</a>
+                </h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="{% static 'img/ropa2.jpg' %}" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Project Five</a>
+                </h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="{% static 'img/ame5.jpg' %}" alt="ropa3"></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Project Six</a>
+                </h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+      </div>
+    
+
+  </div>
+  <!-- /.container -->
+
+  <!--                               Footer                          -->
+  <!--                                                               -->
+  <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Nice&Cheap 2019</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  {% load static %}<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  {% load static %}<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+
+</html>

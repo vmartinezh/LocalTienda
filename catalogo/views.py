@@ -13,3 +13,12 @@ def index(request):
         'index.html',
         context={'num_prenda': num_prenda, 'num_colores': num_colores},
     )
+
+def sidebar(request):
+    return render(request,'sidebar.html')
+
+def about(request):
+    return render(request,'about.html')
+
+def contacto(request):
+    return render(request,'contact.html')
