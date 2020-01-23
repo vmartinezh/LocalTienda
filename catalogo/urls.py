@@ -6,5 +6,5 @@ urlpatterns = [
     path('tienda', views.sidebar, name='sidebar'),
     path('about', views.about, name='about'),
     path('contact', views.contacto, name='contact'),
-
+    path('prendas/', views.PrendaListView.as_view(), name='prendas'),
 ]

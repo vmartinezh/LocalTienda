@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Prenda, Colores, Marcas,Tallas
+from django.views import generic
 
 # Create your views here.
 def index(request):
@@ -22,3 +23,7 @@ def about(request):
 
 def contacto(request):
     return render(request,'contact.html')
+
+class PrendaListView(generic.ListView):
+    model= Prenda
+
