@@ -18,6 +18,7 @@ from django.urls import path
 from django.urls import include
 from django.conf.urls.static import static
 from django.conf import settings
+from catalogo import views
 
 # urlpatterns = [
 #     path('admin/', admin.site.urls),
@@ -29,6 +30,7 @@ from django.conf import settings
 
 urlpatterns = [
 
+    path('', views.index, name='index'),
     path('admin/', admin.site.urls),
     path('catalogo/', include('catalogo.urls')),
     path('accounts/', include('django.contrib.auth.urls')),

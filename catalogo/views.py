@@ -4,16 +4,7 @@ from django.views import generic
 
 # Create your views here.
 def index(request):
-
-    num_prenda= Prenda.objects.all().count()
-    num_colores= Colores.objects.all().count()
-
-
-    return render(
-        request,
-        'index.html',
-        context={'num_prenda': num_prenda, 'num_colores': num_colores},
-    )
+    return render(request,'index.html')
 
 def sidebar(request):
     return render(request,'sidebar.html')
